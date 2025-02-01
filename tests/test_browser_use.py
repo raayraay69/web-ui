@@ -230,7 +230,7 @@ async def test_browser_use_custom():
 
         # 关闭 Playwright 对象
         if playwright:
-            await playwright.stop()
+            playwright.stop()
         if browser:
             await browser.close()
 
